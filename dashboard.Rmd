@@ -1,0 +1,81 @@
+---
+title: "Dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    source: embed
+---
+
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+
+library(flexdashboard)
+```
+
+```{r}
+data("instacart")
+
+# find out 10 most popular vegetables for later analyze
+fresh_vege = instacart %>% 
+  filter(aisle == "fresh vegetables") %>% 
+  count(product_name) %>% 
+  filter(n>2500) %>% 
+  arrange(desc(n)) %>% 
+  mutate(percent = n / sum(n) * 100)
+```
+
+
+Column {data-width=550}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+fresh_vege %>% 
+  plot_ly(labels = ~product_name, values = ~percent, type = 'pie') %>% 
+  layout(title = '10 most popular vegetables consumption by categories',
+         xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
+         yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE))
+```
+
+
+Column {data-width=450}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+instacart %>% 
+  filter(aisle == "fresh vegetables") %>% 
+  filter(product_name %in% c("Organic Cucumber", "Organic Zucchini", "Organic Yellow Onion", "Organic Garlic", "Asparagus", "Organic Red Onion", "Yellow Onions", "Broccoli Crown", "Red Peppers", "Fresh Cauliflower")) %>%  
+  plot_ly(
+    y = ~order_hour_of_day, x = ~product_name, color = ~product_name, 
+    type = "box", colors = "viridis") %>%
+  layout(
+    xaxis = list(title = FALSE),
+    yaxis = list(title = "Order-hour of the day"),
+    title = "Order hour distribution of 10 most popular vegetables")
+```
+
+### Chart C
+
+```{r}
+instacart %>% 
+  count(aisle) %>% 
+  filter(n > 10000) %>% 
+  mutate(aisle = factor(aisle),
+         aisle = fct_reorder(aisle, n)) %>% 
+  plot_ly(
+    x = ~aisle, y = ~n, color = ~aisle, 
+    type = "bar", colors = "viridis") %>% 
+  layout(
+    xaxis = list(title = FALSE),
+    yaxis = list(title = "Count"),
+    title = "Aisles with more than 10000 items ordered"
+  )
+```
+
