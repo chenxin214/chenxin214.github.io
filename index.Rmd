@@ -1,0 +1,39 @@
+---
+title: "My awesome website"
+output: 
+  html_document:
+    toc: true
+    code_folding: hide
+    toc_float: true
+    self_contained: no
+---
+# Brief Introduction
+This website is made by Chenxin Zhang. It include an introduction about me, and also some data analyse that I am  interested. I want you share them with you. You can click the links and buttomes in the website to learn more.
+
+![](https://media.giphy.com/media/rDyYCRzi48WiO66Iah/giphy.gif)
+
+
+
+# Academic and profetional experience
+
+[About me](about.html)
+
+# More about me
+My undergraduate school is a wonderful place 
+* [Colorado State University](https://www.colostate.edu/)
+
+
+# Two sides to my personality {.tabset}
+
+### With familiar people
+
+I am extraverted with people I am familiar with. My friends always say I am a bird who always like to talk.
+
+### With stranger
+
+I am intrverted with stranger, but will be outgoing when I stay with you for hours!
+
+
+
+
+
