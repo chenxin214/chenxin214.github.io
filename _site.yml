@@ -15,4 +15,4 @@ navbar:
       href: http://github.com/chenxin214/
 output:
   html_document:
-    theme: cerulean
+    theme: flatly

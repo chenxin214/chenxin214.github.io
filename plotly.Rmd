@@ -25,7 +25,7 @@ data("instacart")
 fresh_vege = instacart %>% 
   filter(aisle == "fresh vegetables") %>% 
   count(product_name) %>% 
-  filter(n>2500) %>% 
+  filter(n>3850) %>% 
   arrange(desc(n)) %>% 
   mutate(percent = n / sum(n) * 100)
 ```
@@ -39,7 +39,7 @@ fresh_vege = instacart %>%
 ```{r}
 fresh_vege %>% 
   plot_ly(labels = ~product_name, values = ~percent, type = 'pie') %>% 
-  layout(title = '10 most popular vegetables consumption by categories',
+  layout(title = '5 most popular vegetables consumption',
          xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
          yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE))
 ```
@@ -51,14 +51,14 @@ fresh_vege %>%
 ```{r}
 instacart %>% 
   filter(aisle == "fresh vegetables") %>% 
-  filter(product_name %in% c("Organic Cucumber", "Organic Zucchini", "Organic Yellow Onion", "Organic Garlic", "Asparagus", "Organic Red Onion", "Yellow Onions", "Broccoli Crown", "Red Peppers", "Fresh Cauliflower")) %>%  
+  filter(product_name %in% c("Organic Cucumber", "Organic Zucchini", "Organic Yellow Onion")) %>%  
   plot_ly(
     y = ~order_hour_of_day, x = ~product_name, color = ~product_name, 
     type = "box", colors = "viridis") %>%
   layout(
     xaxis = list(title = FALSE),
     yaxis = list(title = "Order-hour of the day"),
-    title = "Order hour distribution of 10 most popular vegetables")
+    title = "Order hour distribution of 3 most popular vegetables")
 ```
 
 ## bar plot

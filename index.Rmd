@@ -7,8 +7,8 @@ output:
     toc_float: true
     self_contained: no
 ---
-# Brief Introduction
-This website is made by Chenxin Zhang. It include an introduction about me, and also some data analyse that I am  interested. I want you share them with you. You can click the links and buttomes in the website to learn more.
+
+This website include an introduction of me, and also some data analyse that I am  interested. I want you share them with you. You can click the links and buttomes in the website to learn more.
 
 ![](https://media.giphy.com/media/rDyYCRzi48WiO66Iah/giphy.gif)
 
@@ -18,20 +18,20 @@ This website is made by Chenxin Zhang. It include an introduction about me, and 
 
 [About me](about.html)
 
-# More about me
-My undergraduate school is a wonderful place 
-* [Colorado State University](https://www.colostate.edu/)
+# Undergraduate School
+My undergraduate school is a wonderful place, and its mascot is Ram. [Colorado State University](https://www.colostate.edu/)
+<img src="images/ram.jpg" style="width:75%">
 
 
 # Two sides to my personality {.tabset}
 
-### With familiar people
+## With familiar people
 
 I am extraverted with people I am familiar with. My friends always say I am a bird who always like to talk.
 
-### With stranger
+## With stranger
 
-I am intrverted with stranger, but will be outgoing when I stay with you for hours!
+I am intraverted with stranger, but will be outgoing when I stay with you for hours!
 
 
 

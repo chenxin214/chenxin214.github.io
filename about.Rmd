@@ -9,24 +9,42 @@ output:
 
 <img src="images/chenxin.jpg" style="width:25%">
 
+## Personal Information
+
+* Chenxin Zhang
+* Phone (970)-831_6681
+* Email: cz2634@cumc.columbia.edu
+
 ## EDUCATION
-09.2015-06.2017: The Southwest University, Chongqing, China
-08.2017-12.2019: Colorado State University, Fort Collins, CO, US
-09.2020-Now: Columbia University, NY, US
+* 09.2015-06.2017: The Southwest University, Chongqing, China
+* 08.2017-12.2019: Colorado State University, Fort Collins, CO, US
+* 09.2020-Now: Columbia University, NY, US
 
 ## RESEARCH EXPERIENCE
 ### Zhihua Liao Lab, College of Biology Science                                        2016-2017
-•	My research in Lab is to transfer the H6H genes from kinds of Solannaceae plants（ Anisodus tanguticus, Datura arborea）to Atropa Belladonna, which aim at improving the content of secondary metabolites in Atropa Belladonna. Before I leave the Lab, we have transferred three kinds of H6H genes to Atropa Belladonna respectively. The rest of the research is to let Atropa Belladonna come into many roots. Finally, we will extract alkaloid from the roots and test the content of alkaloid to find out the ideal H6H genes.
-•	Prepared and sterilize kinds of reagents, equipment
+
+* My research in Lab is to transfer the H6H genes from kinds of Solannaceae plants（ Anisodus tanguticus, Datura arborea）to Atropa Belladonna, which aim at improving the content of secondary metabolites in Atropa Belladonna. 
+* Before I leave the Lab, we have transferred three kinds of H6H genes to Atropa Belladonna respectively. The rest of the research is to let Atropa Belladonna come into many roots. Finally, we will extract alkaloid from the roots and test the content of alkaloid to find out the ideal H6H genes.
+
 
 ### Graham Peers Lab, Biology Department, College of Natural Science, Colorado State University, Fort Collins, CO                                               2017-2018
-•	Growing wild type and mutation of diatom in 12:12 day and night cycle
-•	Cell growth measurements, and BODIPY staining.
-•	Photosynthetic performance (Fv/Fm) measurement.
-•	Collect and analyze data by excel.
-•	General laboratory record keeping. 
+* Growing wild type and mutation of diatom in 12:12 day and night cycle
+* Cell growth measurements, and BODIPY staining.
+* Photosynthetic performance (Fv/Fm) measurement.
+* Collect and analyze data by excel.
+* General laboratory record keeping. 
+
+## Presentation
+
+* “Knock out of a Putative Beta Glucan Synthase Gene (BGS1) Leads to Altered Growth and Carbon Accumulation in a Marine Algae”, Celebrate Undergraduate Research and Creativity Showcase (CURC), Poster presentation, Fort Collins, CO, 2018
+
+## Skill
+
+* genomic PCR, genomic electrophoresis, DNA extraction from plant, enzyme digestion, plant tissue culture, DNA transformation by plasmid, flow cytometry, quantitative carbohydrate assay, spectrophotometry.
+* R Language, Github, Rstudio
 
 ## REFERENCES
+
 Graham Peers, Associate Professor 
 Department of Biology, Colorado State University (970) 491-6868, graham.peers@colostate.edu
 
